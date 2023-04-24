@@ -152,7 +152,7 @@
     <a href="#">Order</a>
     <a href="#">Category</a>
     <a href="#">Search</a>
-    <a href="#">Personal account</a>
+    <a href="#">Sign out</a>
 </nav>
 
 <div class="container">
