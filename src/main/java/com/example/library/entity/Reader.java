@@ -73,6 +73,9 @@ public class Reader {
                 '}';
     }
 
+    public void addBook(Book book) {
+    }
+
     // TODO: 29.03.2023
 //        static void bookSearch(String... varg) {
 //            String title = varg[0], author = varg.length > 1 ? varg[1] : "";

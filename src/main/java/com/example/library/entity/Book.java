@@ -3,14 +3,14 @@ package com.example.library.entity;
 import java.util.Objects;
 
 public class Book {
-  private String bookName;
-  private String autorName;
-  private int numberOfListBooks;
-  private int yearOfPublication;
+    private String bookName;
+    private String autorName;
+    private int numberOfListBooks;
+    private int yearOfPublication;
 
-  private int bookId;
+    private int bookId;
 
-    public Book(String bookName, String autorName, int numberOfListBooks, int yearOfPublication,int bookId) {
+    public Book(String bookName, String autorName, int numberOfListBooks) {
         this.bookName = bookName;
         this.autorName = autorName;
         this.numberOfListBooks = numberOfListBooks;
@@ -18,12 +18,17 @@ public class Book {
         this.bookId = bookId;
     }
 
-public int getBookid(){
+    public Book() {
+
+    }
+
+    public int getBookid() {
         return bookId;
-}
-public void setBookId(){
+    }
+
+    public void setBookId() {
         this.bookId = bookId;
-}
+    }
 
     public String getBookName() {
         return bookName;
@@ -80,4 +85,10 @@ public void setBookId(){
                 ", bookId=" + bookId +
                 '}';
     }
+
+    public String generateHtml() {
+
+        return null;
+    }
 }
+

@@ -1,7 +1,6 @@
 package com.example.library.entity;
 
 import java.util.ArrayList;
-
 public class Administrator {
     private ArrayList<Librarian> librarians;
     private ArrayList<Reader> readers;

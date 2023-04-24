@@ -1,6 +1,7 @@
 package com.example.library.entity;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Catalog {
     private List<Book> books;
@@ -31,5 +32,25 @@ public class Catalog {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Catalog catalog = (Catalog) o;
+        return Objects.equals(books, catalog.books);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(books);
+    }
+
+    @Override
+    public String toString() {
+        return "Catalog{" +
+                "books=" + books +
+                '}';
     }
 }
